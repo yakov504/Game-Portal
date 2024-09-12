@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+    /* background-color: rgb(7, 53, 63); */
+    background-image: linear-gradient(to right,  rgb(7, 65, 77), rgb(65, 5, 57));
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* nav bar style */
+  .nav{
+    background-color: rgb(55, 43, 43);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 7px;
+    padding-left: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .logo{
+    height: 70px;
+      opacity: 0.8;
+      border-radius: 50px;
+      box-shadow: rgb(21, 20, 20) 0px 3px 5px 6px;
+      
+    }
+    .nav ul{
+      padding: 4px;
+      margin: 2px;
+      list-style: none;
+      display: flex;
+      gap: 10px;
+    }
+    .nav a{
+      color: aliceblue;
+      text-decoration: none;
+      height: 100%;;
+      display: flex;
+      align-items: center;
+      padding: .20rem;
+    }
+    .nav li:active{
+      background-color: rgb(110, 84, 84);
+    }
+    .nav li:hover{
+      background-color: #564d4d;
+    }
+  /*end of nav bar style */
+  
+  /* title style */
+  .press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #5e6399;
   }
-}
+  /*end of title style */
+  
+  /* .gray{
+    background-color:#a39c9c;
+    color: #ffffff;
+  }
+  
+  .justSbmit{
+    display: flex;
+    margin:-15px auto;
+  }
+  .submitSign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color:rgb(65, 5, 57);
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .submitLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color:rgb(65, 5, 57);
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  } */
+  
+  /*end of login */
+  
+  /* userdetails style */
+  
+  .userDetail{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+  .userDetail h2{
+    margin-top: 55px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #5e6399;
+    
+  }
+  /* .list{
+  } */
+  .userList{
+    font-size: 28px;
+    color: rgb(65, 5, 57);
+    background: rgb(119, 152, 140);
+    border-radius: 18px;
+    height: 150px;
+    width: 300px;
+    padding-top:20px;
+    padding-bottom:20ppx;
+    margin-top: 35px;
+      
+  }
+  .userList li{
+    font-size: 18px;
+    color:black;
+  }
+  
+  /* end userdetails style */
+  
+  

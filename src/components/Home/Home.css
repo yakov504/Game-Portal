@@ -1,0 +1,11 @@
+h2{
+    margin-top: 55px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #5e6399;
+
+}
