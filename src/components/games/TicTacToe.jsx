@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './TicTacToe.css';
-import X_icon from '../../assets/image/x-tic-tac.png';
+import X_icon from '../../assets/image/x-tic-tac.jpeg';
 import O_icon from '../../assets/image/o-tic-tac.jpeg';
 
 export default function TicTacToe() {
@@ -67,8 +67,8 @@ export default function TicTacToe() {
     return (
         <div className='contaneir'>
             <h1 className="title">Tic Tac Toe</h1>
-            {winner ? <h2 className="winner" style={{color:'orangered'}}>{`Winner: ${winner.toUpperCase()}`}</h2> : <h2>{`Turn: ${count % 2 === 0 ? 'X' : 'O'}`}</h2>}
-            <div className="board">
+            {winner ? <h2 className="winnerTic" style={{color:'orangered'}}>{`Winner: ${winner.toUpperCase()}`}</h2> : <h2>{`Turn: ${count % 2 === 0 ? 'X' : 'O'}`}</h2>}
+            <div className="boardTic">
                 <div className="row1">
                     {renderBox(0)}
                     {renderBox(1)}

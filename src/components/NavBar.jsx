@@ -16,9 +16,9 @@ export default function NavBar() {
         <li>
         <Link to='/SignUp'>Sign Up</Link>
         </li>
-        <li>
+        {/* <li>
         <Link to='/Game'>game</Link>
-        </li>
+        </li> */}
        </ul>
     </nav>
   )

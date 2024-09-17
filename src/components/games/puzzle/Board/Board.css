@@ -1,0 +1,88 @@
+:root {
+  --size: 60px;
+}
+
+.puzzGame {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  background-color: #ecb322d8;
+  
+  /* Use flexbox to center the board vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  position: relative;
+  border: 10px solid rgba(60, 55, 55, 0.586);
+  background-color: #d3c137df;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border-radius: 10px;
+  width: 450px;
+  height: 450px;
+}
+
+.board h1 {
+  font-size: 30px;
+  position: absolute;
+  top: 10px; /* Position near the top of the board */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  margin: 0;
+  text-align: center;
+}
+
+.overlay {
+  pointer-events: none;
+  z-index: 0;
+}
+
+.winnerPuz {
+  position: absolute;
+  background-color: #1d2552;
+  border-radius: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 100;
+}
+
+/* Position button at the bottom center */
+.button-wrapper {
+  position: absolute;
+  bottom: 3px;
+  left:168px;
+  /* transform: translateX(-50%); */
+}
+
+.nwBtnPuzzle {
+  border: transparent;
+  height: 50px;
+  width: 120px;
+  padding: 10px;
+  background-color: rgb(220, 21, 54);
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #420943;
+}

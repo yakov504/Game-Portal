@@ -1,0 +1,48 @@
+:root {
+  --size: 80px; 
+}
+
+.number{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 70px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #337681d6 ;
+    border:  10px solid rgba(0, 0, 0, 0.318);
+    border-radius: 8px;
+    /* margin-top: 5px; */
+    font-size: 20px;
+    color:white;
+    cursor: pointer;
+    transition: left .4s, top .4s;
+
+  }
+.number.correct{
+  background-color: rgb(64, 29, 97);
+}
+  .number.slot--0 { left: 0px; top: 0; }
+  .number.slot--1 { left: calc(var(--size)); top: 0; }
+  .number.slot--2 { left: calc(2 * var(--size)); top: 0; }
+  .number.slot--3 { left: calc(3 * var(--size)); top: 0; }
+  .number.slot--4 { left: 0; top: calc(var(--size)); }
+  .number.slot--5 { left: calc(var(--size)); top: calc(var(--size)); }
+  .number.slot--6 { left: calc(2 * var(--size)); top: calc(var(--size)); }
+  .number.slot--7 { left: calc(3 * var(--size)); top: calc(var(--size)); }
+  .number.slot--8 { left: 0; top: calc(2 * var(--size)); }
+  .number.slot--9 { left: calc(var(--size)); top: calc(2 * var(--size)); }
+  .number.slot--10 { left: calc(2 * var(--size)); top: calc(2 * var(--size)); }
+  .number.slot--11 { left: calc(3 * var(--size)); top: calc(2 * var(--size)); }
+  .number.slot--12 { left: 0; top: calc(3 * var(--size)); }
+  .number.slot--13 { left: calc(var(--size)); top: calc(3 * var(--size)); }
+  .number.slot--14 { left: calc(2 * var(--size)); top: calc(3 * var(--size)); }
+  .number.slot--15 { left: calc(3 * var(--size)); top: calc(3 * var(--size)); }
+  
+.number.disabled{
+  pointer-events: none;
+  background-color: transparent;
+}
+  

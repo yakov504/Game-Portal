@@ -56,7 +56,7 @@ export default function Memory() {
   return (
     <div className='containerMemory'>
       <h1>Memory Game - Movies</h1>
-      <button onClick={shuffleCards}>New Game</button> 
+      <button className='nwGameMemo' onClick={shuffleCards}>New Game</button> 
 
       <div className='card-grid'>
         {cards.map((card) => (

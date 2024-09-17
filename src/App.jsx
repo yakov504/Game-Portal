@@ -8,6 +8,7 @@ import SignUp from './components/SignUp/SignUp.jsx'; //v
 import UsersDetails from './components/UsersDetails.jsx'; //v
 import TicTacToe from './components/games/TicTacToe.jsx';
 import Memory from './components/games/memory/Memory.jsx';
+import Puzzle from './components/games/puzzle/Puzzle.jsx';
 
 import { useState } from 'react';
 import UserContext from './context/UserContext.jsx';
@@ -67,10 +68,13 @@ function App() {
             <Route path="/" element={<Home currUser={currUser} />} />
             <Route path="/UsersDetails" element={currUser.role === 'admin'?<UsersDetails users={users} /> : 
              <span style={{color:'orangered'}}>Sorry admin only</span>} />
-            <Route path="/TicTacToe" element={<TicTacToe />} />
             <Route path="/Login" element={<Login login={login}/>} />
             <Route path="/SignUp" element={<SignUp />} />
-            <Route path="/Game" element={<Memory/>} />
+            <Route path="/Memory" element={<Memory/>} />
+            <Route path="/Puzzle" element={currUser.role === 'player' || currUser.role === 'admin' ? <Puzzle/> : 
+             <span style={{color:'orangered'}}>Sorry Player only</span>}/>
+            <Route path="/TicTacToe" element={currUser.role === 'player' || currUser.role === 'admin'? <TicTacToe/> : 
+             <span style={{color:'orangered'}}>Sorry Player only</span>}/>
           </Routes>  
         </div> 
       </Router>
